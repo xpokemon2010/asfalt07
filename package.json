@@ -1,0 +1,14 @@
+{
+  "name": "asfalt07-drift-basin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Asfalt 07 mobile browser racing game with a two-player Cloudflare Durable Object room server.",
+  "scripts": {
+    "build": "node build_package.mjs",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.2"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {"id":"coupe","name":"Kestrel R","type":"COUPE · RWD","shape":"coupe","power":15,"grip":5.2,"weight":1.05,"max":62,"color":"#ff7438"},
+  {"id":"sedan","name":"Mako 320","type":"SEDAN · STREET","shape":"sedan","power":12.5,"grip":6.5,"weight":1.22,"max":57,"color":"#57c5d4"},
+  {"id":"track","name":"Vanta GT","type":"TRACK · SEMI-SLICK","shape":"track","power":19,"grip":7.4,"weight":0.98,"max":72,"color":"#ad88ff"},
+  {"id":"hatch","name":"Piko RS","type":"HOT HATCH · STREET","shape":"hatch","power":13,"grip":6.1,"weight":0.98,"max":58,"color":"#94d46a"},
+  {"id":"rally","name":"Nord R5","type":"RALLY · AWD FEEL","shape":"rally","power":16.5,"grip":7,"weight":1.08,"max":65,"color":"#e9bd52"},
+  {"id":"classic","name":"Astra 70","type":"CLASSIC · RWD","shape":"classic","power":12,"grip":4.7,"weight":1.24,"max":54,"color":"#dce4e8"},
+  {"id":"electric","name":"Volt E","type":"ELECTRIC · TORQUE","shape":"electric","power":18,"grip":6.4,"weight":1.4,"max":60,"color":"#48c9d7"},
+  {"id":"muscle","name":"Brasa V8","type":"MUSCLE · POWER","shape":"muscle","power":20,"grip":4.9,"weight":1.38,"max":64,"color":"#e85f52"}
+]
