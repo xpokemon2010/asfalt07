@@ -146,7 +146,7 @@ function step(dt){
   const rpm=Math.min(7800,Math.max(850,850+Math.abs(vf)*ratio*94));world.rpm=rpm;if(rpm>7600&&world.gear>0)vf*=.995;
   const slip=Math.abs(world.driftAngle);if(speed>6&&slip>.18){state.score+=Math.round(speed*slip*dt*4);$('#driftScore').classList.add('on');}else if(!state.remoteSnap){$('#driftScore').classList.remove('on');}
   world.gear=state.gear;playerCar.group.position.set(world.x,0,world.z);playerCar.group.rotation.y=world.yaw;
-  playerCar.group.userData.wheels.forEach((w,i)=>{w.rotation.x+=vf*dt*1.7;w.rotation.y=(i===1||i===3)?steer*.3:0;});
+  playerCar.group.userData.wheels.forEach((w,i)=>{w.rotation.x+=vf*dt*1.7;w.rotation.y=(i===1||i===3)?-steer*.3:0;});
   const hood=playerCar.group.userData.hood;hood.scale.y=1-state.damage*.002;hood.position.y=1.04-state.damage*.001;playerCar.group.userData.bodymat.color.set(state.damage>45?'#8b4f3d':state.color);
   if(state.remoteSnap&&remoteCar){const r=state.remoteSnap,t=1-Math.exp(-dt*8);remoteCar.group.position.x=THREE.MathUtils.lerp(remoteCar.group.position.x,r.x,t);remoteCar.group.position.z=THREE.MathUtils.lerp(remoteCar.group.position.z,r.z,t);let diff=((r.yaw-remoteCar.group.rotation.y+Math.PI*3)%(Math.PI*2))-Math.PI;remoteCar.group.rotation.y+=diff*t;}
   updateHUD(speed,rpm,slip);
